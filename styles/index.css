@@ -1,0 +1,121 @@
+body {
+  background-color: #222;
+  color: #BBB;
+  margin: 10px;
+}
+
+h1, h2, h3, h4 {
+  color: #FFF;
+}
+
+#content-wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 250px;
+  gap: 1rem;
+}
+
+#overview {
+  width: 200%;
+  height: 100%;
+  flex-shrink: 1;
+  position: sticky;
+  top: 60px;
+  color: #FFF;
+}
+
+#overview h1 {
+  margin-bottom: 0;
+}
+
+#overview h2 {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  opacity: .8;
+}
+
+#overview h3 {
+  opacity: .6;
+}
+
+#ov-social {
+  margin-top: auto;
+}
+
+#ov-social a {
+  text-decoration: none;
+}
+
+.gh-logo, .li-logo {
+  width: 30px;
+  fill: white;
+  opacity: .6;
+  height: min-content;
+}
+
+.gh-logo:hover, .li-logo:hover {
+  opacity: 1;
+}
+
+#exp-list {
+  list-style: none;
+}
+
+#exp-list h4 {
+  margin: 0;
+}
+
+#exp-list p {
+  margin-bottom: 0;
+}
+
+#exp-list li {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+}
+
+#exp-list li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(185, 185, 255, 0.05);
+}
+
+#proj-list li img {
+  max-width: 30%;
+  height: fit-content;
+}
+
+#proj-list li {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+}
+
+#proj-list li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(185, 185, 255, 0.05);
+}
+
+#proj-list li > div {
+  padding-left: 10px;
+}
+
+#proj-list li > div h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+#proj-list li > div p {
+  margin: 0;
+}
+
+@media only screen and not ((min-device-width: 320px) and (max-device-width: 480px)) {
+  #content-wrap {
+    flex-direction: row;
+  }
+}
+

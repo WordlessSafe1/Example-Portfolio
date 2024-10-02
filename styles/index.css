@@ -19,8 +19,6 @@ h1, h2, h3, h4 {
   width: 200%;
   height: 100%;
   flex-shrink: 1;
-  position: sticky;
-  top: 60px;
   color: #FFF;
 }
 
@@ -84,7 +82,7 @@ h1, h2, h3, h4 {
 
 #proj-list li img {
   max-width: 30%;
-  height: fit-content;
+  height: 30%;
 }
 
 #proj-list li {
@@ -116,6 +114,11 @@ h1, h2, h3, h4 {
 @media only screen and not ((min-device-width: 320px) and (max-device-width: 480px)) {
   #content-wrap {
     flex-direction: row;
+  }
+
+  #overview {
+    position: sticky;
+    top: 60px;
   }
 }
 
